@@ -1,0 +1,9 @@
+Building SpongeCoin
+
+See doc/readme-qt.rst for instructions on building SpongeCoin-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of SpongeCoin.
+
+See doc/build-*.txt for instructions on building spongecoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of SpongeCoin.
