@@ -1,2 +1,2 @@
-#define BUILD_DESC "v0.9.10.1-1-g5409bba"
-#define BUILD_DATE "2014-06-14 20:22:03 -0700"
+// No build information available
+#define BUILD_DATE "2014-06-20 21:25:50 +0900"

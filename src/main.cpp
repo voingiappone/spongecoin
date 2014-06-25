@@ -3415,7 +3415,7 @@ bool InitBlockIndex() {
         //   vMerkleTree: 97ddfbbae6
 
         // Genesis block        
-        const char* pszTimestamp = "Wired 09/Jan/2014 The Grand Experiment Goes Live: Overstock.com Is Now Accepting Bitcoins";
+        const char* pszTimestamp = "Italia out of the world cup";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -3427,7 +3427,8 @@ bool InitBlockIndex() {
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1403252147;
+        //block.nTime    = 1403252147;
+        block.nTime    = 1403675971;
         block.nBits    = 0x1e0fffff;
         block.nNonce   = 28917698;
 
@@ -3443,9 +3444,11 @@ bool InitBlockIndex() {
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
         printf("min nBit:  %08x\n", bnProofOfWorkLimit.GetCompact());
-        assert(block.hashMerkleRoot == uint256("0xe0028eb9648db56b1ac77cf090b99048a8007e2bb64b68f092c03c7f56a662c7"));
+        assert(block.hashMerkleRoot == uint256("0x49919dce22efde9ab29a2f688a15e4660ad5696502bd6984b06dd9405507905b"));
         block.print();
         assert(hash == hashGenesisBlock);
+        
+        // modificato
         
         if(true && block.GetHash() != hashGenesisBlock)
 
